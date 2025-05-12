@@ -1,0 +1,28 @@
+# 🖌️ Programa de Desenho Interativo com Python
+
+Este é um projeto de Computação Gráfica desenvolvido em Python, que permite ao usuário desenhar formas geométricas em diferentes cores por meio de uma interface gráfica interativa com Tkinter e Turtle.
+
+## 🎯 Objetivo
+
+Oferecer uma interface simples e intuitiva onde o usuário possa escolher uma forma (Quadrado, Triângulo ou Círculo) e uma cor (Vermelho, Azul, Verde ou Amarelo), e desenhá-la com um único clique.
+
+## 🛠️ Tecnologias Utilizadas
+
+- Python 3
+- Tkinter (interface gráfica)
+- Turtle (desenho vetorial)
+
+## 🚀 Funcionalidades
+
+- Seleção de forma com botões visuais (símbolos)
+- Seleção de cor com botões coloridos
+- Desenho da forma no canvas com preenchimento
+- Contorno com espessura configurada
+- Limpeza da tela e reset das seleções
+- Interface com fundo cinza claro e layout organizado
+
+## 💻 Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/desenho-interativo.git
