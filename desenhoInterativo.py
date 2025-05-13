@@ -164,7 +164,7 @@ frame_acoes = tk.Frame(janela)
 frame_acoes.pack(pady=20)
 tk.Button(frame_acoes, text="Desenhar", font=("Arial", 12), command=desenhar).pack(side="left", padx=10)
 tk.Button(frame_acoes, text="Limpar", font=("Arial", 12), command=limpar_desenho).pack(side="left", padx=10)
-tk.Button(frame_acoes, text="Desenho Surpresa", font=("Arial", 12), command=desenho_surpresa).pack(side="left", padx=10)
+tk.Button(frame_acoes, text="Surpresa", font=("Arial", 12), command=desenho_surpresa).pack(side="left", padx=10)
 
 # Canvas
 canvas = ScrolledCanvas(janela, width=780, height=300)
@@ -174,15 +174,6 @@ turtle = RawTurtle(canvas)
 turtle.hideturtle()
 turtle.speed(0)
 
-# Coordenadas do mouse
-label_coord = tk.Label(janela, text="Coordenadas do mouse: X=0, Y=0", font=("Arial", 9, "italic"))
-label_coord.pack()
-
-def mostrar_coordenadas(event):
-    coords = f"Coordenadas do mouse: X={event.x}, Y={event.y}"
-    label_coord.config(text=coords)
-
-canvas.bind("<Motion>", mostrar_coordenadas)
 
 # Loop principal
 tk.mainloop()
